@@ -26,25 +26,28 @@
     <div class="main-content">
 
 
-        <form method="post" action="/register"></form>
+        <form onsubmit="insertTable(); return false;" method="post" action="/register">
+            <!--return false nije mi jasno-->
 
-        <label for="name">Name:</label>
-        <input type="text" name="Name" id="name"><br>
+            <label for="name">Name:</label>
+            <input type="text" name="Name" id="name" required><br>
 
-        <label for="role">Role:</label>
-        <input type="text" name="Role" id="role"><br>
+            <label for="role">Role:</label>
+            <input type="text" name="Role" id="role" required><br>
 
-        <label for="workerID">Worker ID:</label>
-        <input type="number" name="WorkerID" id="workerID"><br>
+            <label for="workerID">Worker ID:</label>
+            <input type="number" name="WorkerID" id="workerID" required><br>
 
-        <label for="date">Date:</label>
-        <input type="date" name="Date" id="date"><br>
+            <label for="date">Date:</label>
+            <input type="date" name="Date" id="date" required><br>
 
-        <label for="hours">Working hours:</label>
-        <input type="number" name="Hours" id="hours"><br>
+            <label for="hours">Working hours:</label>
+            <input type="number" name="Hours" id="hours" required><br>
 
-        <button>Save</button>
-        <button>Clear</button>
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+
+        </form>
 
 
 
@@ -150,6 +153,8 @@
         </ul>
 
     </div>
+
+    <script src="main.js"></script>
 
 </body>
 

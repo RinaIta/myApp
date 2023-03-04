@@ -56,3 +56,7 @@
     font-size: 28px;
     text-align: center;
 }
+
+#table tbody tr:hover {
+    background-color: aquamarine;
+}
